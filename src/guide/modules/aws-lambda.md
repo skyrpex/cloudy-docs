@@ -45,7 +45,7 @@ The `lambda.CallbackFunction` is very powerful because it can capture CloudForma
 ```ts
 import * as aws_sqs from "aws-cdk-lib/aws-sqs";
 import * as lambda from "cloudy-cdk-lib/aws-lambda";
-import * as client_sqs from "cloudy-cdk-lib/client-sqs";
+import * as client_sqs from "@aws-sdk/client-sqs";
 
 declare const queue: aws_sqs.IQueue;
 
