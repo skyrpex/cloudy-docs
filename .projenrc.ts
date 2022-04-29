@@ -10,7 +10,7 @@ import { TypeScriptProject } from "projen/lib/typescript";
 
 const project = new TypeScriptProject({
   name: "cloudy-docs",
-  description: "",
+  description: "Documentation for Cloudy",
   defaultReleaseBranch: "main",
 
   deps: [],

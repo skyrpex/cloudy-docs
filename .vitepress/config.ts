@@ -3,7 +3,7 @@ import { DefaultTheme, defineConfig } from "vitepress";
 export default defineConfig({
   srcDir: "src",
   title: "Cloudy",
-  description: "",
+  description: "Documentation for Cloudy",
   lastUpdated: true,
 
   head: [
