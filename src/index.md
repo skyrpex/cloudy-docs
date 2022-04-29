@@ -10,6 +10,8 @@ Cloudy is still highly experimental and subject to change.
 
 Cloudy is a set of constructs for the AWS Cloud Development Kit that aim to improve the DX by providing a faster and type-safe code environment. If you are already used to the CDK, you will feel at home with Cloudy.
 
+You can find the Cloudy repository at [skyrpex/cloudy](https://github.com/skyrpex/cloudy).
+
 :::tip Prerequisites
 The documentation assumes basic familiarity with the AWS CDK. If you are totally new, we recommend visiting the [Official AWS CDK Guide](https://docs.aws.amazon.com/cdk/v2/guide/home.html) page.
 :::
