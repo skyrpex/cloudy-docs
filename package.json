@@ -1,6 +1,6 @@
 {
   "name": "cloudy-docs",
-  "description": "",
+  "description": "Documentation for Cloudy",
   "scripts": {
     "build": "npx projen build",
     "clobber": "npx projen clobber",
@@ -26,7 +26,7 @@
     "@types/node": "^12",
     "@typescript-eslint/eslint-plugin": "^5",
     "@typescript-eslint/parser": "^5",
-    "cloudy-node": "^0.0.10",
+    "cloudy-node": "^0.0.11",
     "eslint": "^8",
     "eslint-config-prettier": "^8.5.0",
     "eslint-import-resolver-node": "^0.3.6",
@@ -37,7 +37,7 @@
     "json-schema": "^0.4.0",
     "npm-check-updates": "^12",
     "prettier": "^2.6.2",
-    "projen": "^0.54.51",
+    "projen": "^0.54.58",
     "typescript": "^4.6.4"
   },
   "dependencies": {

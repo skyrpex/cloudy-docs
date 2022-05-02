@@ -5,7 +5,7 @@ specifiers:
   '@types/node': ^12
   '@typescript-eslint/eslint-plugin': ^5
   '@typescript-eslint/parser': ^5
-  cloudy-node: ^0.0.10
+  cloudy-node: ^0.0.11
   eslint: ^8
   eslint-config-prettier: ^8.5.0
   eslint-import-resolver-node: ^0.3.6
@@ -16,7 +16,7 @@ specifiers:
   json-schema: ^0.4.0
   npm-check-updates: ^12
   prettier: ^2.6.2
-  projen: ^0.54.51
+  projen: ^0.54.58
   typescript: ^4.6.4
   vitepress: ^0.22.3
   vue: ^3.2.33
@@ -26,11 +26,11 @@ dependencies:
   vue: 3.2.33
 
 devDependencies:
-  '@cloudy-ts/eslint-plugin': 0.0.4_eslint@8.14.0
+  '@cloudy-ts/eslint-plugin': 0.0.5_eslint@8.14.0
   '@types/node': 12.20.50
   '@typescript-eslint/eslint-plugin': 5.21.0_ade6595cb7be1524e723c025c098ae5d
   '@typescript-eslint/parser': 5.21.0_eslint@8.14.0+typescript@4.6.4
-  cloudy-node: 0.0.10
+  cloudy-node: 0.0.11
   eslint: 8.14.0
   eslint-config-prettier: 8.5.0_eslint@8.14.0
   eslint-import-resolver-node: 0.3.6
@@ -39,9 +39,9 @@ devDependencies:
   eslint-plugin-prettier: 4.0.0_665eb419c9d7860ca0c224f7f6dcdace
   eslint-plugin-unicorn: 42.0.0_eslint@8.14.0
   json-schema: 0.4.0
-  npm-check-updates: 12.5.10
+  npm-check-updates: 12.5.11
   prettier: 2.6.2
-  projen: 0.54.51
+  projen: 0.54.58
   typescript: 4.6.4
 
 packages:
@@ -57,9 +57,6 @@ packages:
     peerDependencies:
       '@algolia/client-search': ^4.9.1
       algoliasearch: ^4.9.1
-    peerDependenciesMeta:
-      '@algolia/client-search':
-        optional: true
     dependencies:
       '@algolia/autocomplete-shared': 1.5.2
       algoliasearch: 4.13.0
@@ -180,14 +177,14 @@ packages:
       js-tokens: 4.0.0
     dev: true
 
-  /@babel/parser/7.17.9:
-    resolution: {integrity: sha512-vqUSBLP8dQHFPdPi9bc5GK9vRkYHJ49fsZdtoJ8EQ8ibpwk5rPKfvNIwChB0KVXcIjcepEBBd2VHC5r9Gy8ueg==}
+  /@babel/parser/7.17.10:
+    resolution: {integrity: sha512-n2Q6i+fnJqzOaq2VkdXxy2TCPCWQZHiCo0XqmrCvDWcZQKRyZzYi4Z0yxlBuN0w+r2ZHmre+Q087DSrw3pbJDQ==}
     engines: {node: '>=6.0.0'}
     hasBin: true
     dev: false
 
-  /@cloudy-ts/eslint-plugin/0.0.4_eslint@8.14.0:
-    resolution: {integrity: sha512-TiVfvPYh2ks7Uoq071dHmn9TnYD4uSPia8NqBKMBNPZS3AdEhqDJ7SE+Zn/pXm72bnzetMGxQG+DV/i+zcFYGg==}
+  /@cloudy-ts/eslint-plugin/0.0.5_eslint@8.14.0:
+    resolution: {integrity: sha512-W1loVLmbP5Z/AQRGLfSOUKvyjrTT57udBJDdHGYzDDlmlCg4/51HwhVY6dSOIPSSU7rqpD4LcDB8r6WDk7NIJg==}
     engines: {node: '>= 14.18.0'}
     peerDependencies:
       eslint: ^8.14.0
@@ -217,13 +214,6 @@ packages:
       '@types/react': '>= 16.8.0 < 18.0.0'
       react: '>= 16.8.0 < 18.0.0'
       react-dom: '>= 16.8.0 < 18.0.0'
-    peerDependenciesMeta:
-      '@types/react':
-        optional: true
-      react:
-        optional: true
-      react-dom:
-        optional: true
     dependencies:
       '@algolia/autocomplete-core': 1.5.2
       '@algolia/autocomplete-preset-algolia': 1.5.2_algoliasearch@4.13.0
@@ -307,7 +297,7 @@ packages:
     engines: {node: ^12.13.0 || ^14.15.0 || >=16.0.0}
     dependencies:
       '@npmcli/promise-spawn': 3.0.0
-      lru-cache: 7.8.1
+      lru-cache: 7.9.0
       mkdirp: 1.0.4
       npm-pick-manifest: 7.0.1
       proc-log: 2.0.1
@@ -560,7 +550,7 @@ packages:
   /@vue/compiler-core/3.2.33:
     resolution: {integrity: sha512-AAmr52ji3Zhk7IKIuigX2osWWsb2nQE5xsdFYjdnmtQ4gymmqXbjLvkSE174+fF3A3kstYrTgGkqgOEbsdLDpw==}
     dependencies:
-      '@babel/parser': 7.17.9
+      '@babel/parser': 7.17.10
       '@vue/shared': 3.2.33
       estree-walker: 2.0.2
       source-map: 0.6.1
@@ -576,7 +566,7 @@ packages:
   /@vue/compiler-sfc/3.2.33:
     resolution: {integrity: sha512-H8D0WqagCr295pQjUYyO8P3IejM3vEzeCO1apzByAEaAR/WimhMYczHfZVvlCE/9yBaEu/eu9RdiWr0kF8b71Q==}
     dependencies:
-      '@babel/parser': 7.17.9
+      '@babel/parser': 7.17.10
       '@vue/compiler-core': 3.2.33
       '@vue/compiler-dom': 3.2.33
       '@vue/compiler-ssr': 3.2.33
@@ -584,7 +574,7 @@ packages:
       '@vue/shared': 3.2.33
       estree-walker: 2.0.2
       magic-string: 0.25.9
-      postcss: 8.4.12
+      postcss: 8.4.13
       source-map: 0.6.1
     dev: false
 
@@ -598,7 +588,7 @@ packages:
   /@vue/reactivity-transform/3.2.33:
     resolution: {integrity: sha512-4UL5KOIvSQb254aqenW4q34qMXbfZcmEsV/yVidLUgvwYQQ/D21bGX3DlgPUGI3c4C+iOnNmDCkIxkILoX/Pyw==}
     dependencies:
-      '@babel/parser': 7.17.9
+      '@babel/parser': 7.17.10
       '@vue/compiler-core': 3.2.33
       '@vue/shared': 3.2.33
       estree-walker: 2.0.2
@@ -855,7 +845,7 @@ packages:
       fs-minipass: 2.1.0
       glob: 8.0.1
       infer-owner: 1.0.4
-      lru-cache: 7.8.1
+      lru-cache: 7.9.0
       minipass: 3.1.6
       minipass-collect: 1.0.2
       minipass-flush: 1.0.5
@@ -976,8 +966,8 @@ packages:
       mimic-response: 1.0.1
     dev: true
 
-  /cloudy-node/0.0.10:
-    resolution: {integrity: sha512-8zLt/kEXswe3fTjAfaOnAHiplYZHnTcQ+uU0L/bd6e+BTfg/qiHU6R6nvlcF9qKRleOFNw/u8KZXWmjtDqui/w==}
+  /cloudy-node/0.0.11:
+    resolution: {integrity: sha512-yE5o0ALqaCPbZ8lct2EH4naNeYPywGVg9/vn9o1bWZqMEZqnesyhjXf3axa84qmbMPiTXY0s25UjX6RazmBINw==}
     engines: {node: '>= 14.18.0'}
     hasBin: true
     dependencies:
@@ -2022,7 +2012,7 @@ packages:
     resolution: {integrity: sha512-rRnjWu0Bxj+nIfUOkz0695C0H6tRrN5iYIzYejb0tDEefe2AekHu/U5Kn9pEie5vsJqpNQU02az7TGSH3qpz4Q==}
     engines: {node: ^12.13.0 || ^14.15.0 || >=16}
     dependencies:
-      lru-cache: 7.8.1
+      lru-cache: 7.9.0
     dev: true
 
   /http-cache-semantics/4.1.0:
@@ -2469,8 +2459,8 @@ packages:
       yallist: 4.0.0
     dev: true
 
-  /lru-cache/7.8.1:
-    resolution: {integrity: sha512-E1v547OCgJvbvevfjgK9sNKIVXO96NnsTsFPBlg4ZxjhsJSODoH9lk8Bm0OxvHNm6Vm5Yqkl/1fErDxhYL8Skg==}
+  /lru-cache/7.9.0:
+    resolution: {integrity: sha512-lkcNMUKqdJk96TuIXUidxaPuEg5sJo/+ZyVE2BDFnuZGzwXem7d8582eG8vbu4todLfT14snP6iHriCHXXi5Rw==}
     engines: {node: '>=12'}
     dev: true
 
@@ -2497,7 +2487,7 @@ packages:
       http-proxy-agent: 5.0.0
       https-proxy-agent: 5.0.1
       is-lambda: 1.0.1
-      lru-cache: 7.8.1
+      lru-cache: 7.9.0
       minipass: 3.1.6
       minipass-collect: 1.0.2
       minipass-fetch: 2.1.0
@@ -2716,8 +2706,8 @@ packages:
       npm-normalize-package-bin: 1.0.1
     dev: true
 
-  /npm-check-updates/12.5.10:
-    resolution: {integrity: sha512-GKBmgC6ZDZwshsOSuse+JYDFVQcaKj9NWNWXW9oWX0TdrKJx26/iR6d4t6LG+iNm5jX+voBoGcEIaGF8CRzWpw==}
+  /npm-check-updates/12.5.11:
+    resolution: {integrity: sha512-uS3yYYK/F1VvZlJRymuCkq+MY2R7v/WlORo5WPUTYx+1OwkqeDMC/CEEGfCN7ATwT2M+JxVVKk9Gq/TGiZjJOw==}
     engines: {node: '>=12'}
     hasBin: true
     dependencies:
@@ -3042,8 +3032,8 @@ packages:
     engines: {node: '>=4'}
     dev: true
 
-  /postcss/8.4.12:
-    resolution: {integrity: sha512-lg6eITwYe9v6Hr5CncVbK70SoioNQIq81nsaG86ev5hAidQvmOeETBqs7jm43K2F5/Ley3ytDtriImV6TpNiSg==}
+  /postcss/8.4.13:
+    resolution: {integrity: sha512-jtL6eTBrza5MPzy8oJLFuUscHDXTV5KcLlqAWHl5q5WYRfnNRGSmOZmOZ1T6Gy7A99mOZfqungmZMpMmCVJ8ZA==}
     engines: {node: ^10 || ^12 || >=14}
     dependencies:
       nanoid: 3.3.3
@@ -3093,8 +3083,8 @@ packages:
     engines: {node: '>=0.4.0'}
     dev: true
 
-  /projen/0.54.51:
-    resolution: {integrity: sha512-wXnYg1hMgpqFqh4uxhaDCPLK2utxhfTkOwoXc5nfXXdGXRicYYYna4ogBSic9269OwQprJ9DM3oEYRFe11YXWQ==}
+  /projen/0.54.58:
+    resolution: {integrity: sha512-hCskIJhqD5rrA+NlEUG3ShZsofCNd0VH0RtfcpPu/6Dqd2AkZCX8V1x6dVDOM7Eqh1Zr5SqO9QwDHDrJY6IDPg==}
     engines: {node: '>= 12.7.0'}
     hasBin: true
     dependencies:
@@ -3317,8 +3307,8 @@ packages:
       glob: 7.2.0
     dev: true
 
-  /rollup/2.70.2:
-    resolution: {integrity: sha512-EitogNZnfku65I1DD5Mxe8JYRUCy0hkK5X84IlDtUs+O6JRMpRciXTzyCUuX11b5L5pvjH+OmFXiQ3XjabcXgg==}
+  /rollup/2.71.1:
+    resolution: {integrity: sha512-lMZk3XfUBGjrrZQpvPSoXcZSfKcJ2Bgn+Z0L1MoW2V8Wh7BVM+LOBJTPo16yul2MwL59cXedzW1ruq3rCjSRgw==}
     engines: {node: '>=10.0.0'}
     hasBin: true
     optionalDependencies:
@@ -3779,9 +3769,9 @@ packages:
         optional: true
     dependencies:
       esbuild: 0.14.38
-      postcss: 8.4.12
+      postcss: 8.4.13
       resolve: 1.22.0
-      rollup: 2.70.2
+      rollup: 2.71.1
     optionalDependencies:
       fsevents: 2.3.2
     dev: false
