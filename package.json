@@ -23,7 +23,7 @@
   },
   "devDependencies": {
     "@cloudy-ts/eslint-plugin": "*",
-    "@types/node": "^12",
+    "@types/node": "^14",
     "@typescript-eslint/eslint-plugin": "^5",
     "@typescript-eslint/parser": "^5",
     "cloudy-node": "^0.0.11",
@@ -37,7 +37,7 @@
     "json-schema": "^0.4.0",
     "npm-check-updates": "^12",
     "prettier": "^2.6.2",
-    "projen": "^0.54.58",
+    "projen": "^0.55.7",
     "typescript": "^4.6.4"
   },
   "dependencies": {
