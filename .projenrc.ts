@@ -21,6 +21,8 @@ const project = new TypeScriptProject({
   projenrcJs: false,
   sampleCode: false,
   release: false,
+  autoApproveUpgrades: true,
+  autoApproveOptions: {},
 
   prettier: true,
   prettierOptions: {
