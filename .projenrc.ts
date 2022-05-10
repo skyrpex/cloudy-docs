@@ -22,7 +22,9 @@ const project = new TypeScriptProject({
   sampleCode: false,
   release: false,
   autoApproveUpgrades: true,
-  autoApproveOptions: {},
+  autoApproveOptions: {
+    secret: "PROJEN_GITHUB_TOKEN",
+  },
 
   prettier: true,
   prettierOptions: {
