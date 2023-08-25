@@ -6,7 +6,7 @@
 We use [pnpm](https://pnpm.io/) instead of npm, but you can just whatever package manager you prefer.
 :::
 
-First, install `cloudy-cdk-lib` along with the AWS CDK dependencies. We also recommend installing `cloudy-node` to synthesize the cloudy assembly.
+First, install `cloudy-cdk-lib` along with the AWS CDK dependencies. We also recommend installing `tsx` to synthesize the cloudy assembly.
 
 ```bash
 $ pnpm add cloudy-cdk-lib aws-cdk-lib aws-cdk constructs tsx

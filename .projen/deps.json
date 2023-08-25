@@ -20,10 +20,6 @@
       "type": "build"
     },
     {
-      "name": "cloudy-node",
-      "type": "build"
-    },
-    {
       "name": "eslint-config-prettier",
       "type": "build"
     },
@@ -67,6 +63,10 @@
     },
     {
       "name": "projen",
+      "type": "build"
+    },
+    {
+      "name": "tsx",
       "type": "build"
     },
     {

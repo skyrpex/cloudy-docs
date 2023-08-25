@@ -51,10 +51,10 @@ const project = new TypeScriptProject({
   },
 });
 
-// Use cloudy-node to run projen.
+// Use tsx to run projen.
 project.deps.removeDependency("ts-node");
-project.addDevDeps("cloudy-node");
-project.defaultTask?.exec("cloudy-node .projenrc.ts");
+project.addDevDeps("tsx");
+project.defaultTask?.exec("tsx .projenrc.ts");
 
 // Lint.
 project.addDevDeps("eslint-plugin-unicorn", "@cloudy-ts/eslint-plugin");
