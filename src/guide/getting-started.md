@@ -9,16 +9,16 @@ We use [pnpm](https://pnpm.io/) instead of npm, but you can just whatever packag
 First, install `cloudy-cdk-lib` along with the AWS CDK dependencies. We also recommend installing `cloudy-node` to synthesize the cloudy assembly.
 
 ```bash
-$ pnpm add cloudy-cdk-lib cloudy-node aws-cdk-lib aws-cdk constructs
+$ pnpm add cloudy-cdk-lib aws-cdk-lib aws-cdk constructs tsx
 ```
 
 ## Create your CDK files
 
-Create the `cdk.json` file. We will use [cloudy-node](https://github.com/skyrpex/cloudy-node) to run our CDK code because it is faster than [ts-node](https://github.com/TypeStrong/ts-node), thanks to [esbuild](https://github.com/evanw/esbuild). It also works better in conjunction of some Cloudy constructs such as `aws_lambda.CallbackFunction`.
+Create the `cdk.json` file. We will use [tsx](https://github.com/esbuild-kit/tsx) to run our CDK code while transpiling it with TypeScript.
 
 ```json
 {
-  "app": "pnpx cloudy-node index.ts"
+  "app": "pnpm exec tsx index.ts"
 }
 ```
 
@@ -45,5 +45,5 @@ new cdk.CfnOutput(helloWorld, "FunctionName", {
 Now, you can use your stack as usual:
 
 ```bash
-$ pnpx cdk deploy
+$ pnpm exec cdk deploy
 ```
